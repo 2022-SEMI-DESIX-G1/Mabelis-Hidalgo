@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laboratorio # 2</title>
+</head>
+
+<body>
+<!--
+        Resolver.
+Los siguientes problemas usando Javascript, ejecutado dentro un archivo de HTML.
+1. Escribir en una etiqueta "p" dentro del HTML, la respuesta a la pregunta.
+¿Qué es Javascript y en qué se asemeja a Java?
+2.Declarar dos variables con la palabra reservada "var", imprimir el resultado de las operaciones de "Suma", "Resta", "Multiplicación" y "División" en la consola. Las variables pueden ser estáticas.
+3.Declarar dos variables con la palabra reservada "let", imprimir la concatenación de ellas.
+4.Declarar dos variables con la palabra reservada "const", imprimir cuál es el tipo de dato de esa variable.
+5.Declarar una variable tipo Objecto, colocar 4 llaves dentro de él que contengan un entero, un string, un booleano y un objeto vacío, en ese mismo orden.
+-->
+    <!--1 -->
+    <p>1. ¿Que es javascript y en que se asemeja a Java?</p>
+    <p>JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web, cada vez que una página web hace algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc.
+    Java y JavaScript por su nombre hacen parecer que son parecidos, ya que los dos son lenguajes de programación, ya que puedes saber programar en Java y por lo contrario, no tener idea de programar en JavaScript, y a la inversa.
+    La razón de que sus nombres se parezcan, es que al principio JavaScript tenía el nombre de LiveScript, al ver que Java estaba teniendo mucha notoriedad, Netscape decidió cambiar su nombre por la influencia que este suponía, haciendo que sus nombres se parecieran.</p>
+    <script>
+        var x = 14, y = 2;
+        //2
+        console.log(`Suma ${x}+${y} = ${x + y}`);
+        console.log(`Resta ${x}-${y} = ${x - y}`);
+        console.log(`Multiplicación ${x}*${y} = ${x * y}`);
+        console.log(`Division ${x}/${y} = ${x / y}`);
+        //3
+        let palabra1 = "Mabelis", palabra2 = "Arlyn"
+        console.log(palabra1 + " " + palabra2)
+        //4
+        const variable1 = undefined, variable2 = null;
+        console.log(`variable # 1 = ${typeof variable1}`);
+        console.log(`variable # 2 = ${typeof variable2}`);
+        //5
+        let objeto = {
+            entero: 14,
+            string: "",
+            booleano: true,
+            objecto: {}
+        };
+        console.log(`objeto = ${JSON.stringify(objeto)}`);
+
+    </script>
+    
+</body>
+
+</html>
